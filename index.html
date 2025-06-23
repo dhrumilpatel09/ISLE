@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ASL A-Z Detector</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🖐 ASL Gesture Detector</h1>
+
+  <div class="container">
+    <div class="video-card">
+      <video id="webcam" autoplay playsinline></video>
+      <div id="label-container">Model not started</div>
+      <div class="buttons">
+        <button id="startBtn">Start Model</button>
+        <button id="stopBtn">Stop Model</button>
+      </div>
+    </div>
+    <div class="history-card">
+      <h2>History</h2>
+      <div id="history-container"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
